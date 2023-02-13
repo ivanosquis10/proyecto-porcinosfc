@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import logo from '../public/img/porcinosfc.webp';
 
 export default function Header() {
   /* 
@@ -24,11 +25,12 @@ export default function Header() {
       {/* Logo PorcinosFC */}
       <div>
         <Link href={'/'}>
-          <img
-            width="120px"
-            heght="120px"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Porcinos_FC.svg/600px-Porcinos_FC.svg.png"
-            alt="hola"
+          <Image
+            src={logo}
+            alt="Picture of the author"
+            width={150}
+            height={150}
+            priority
           />
         </Link>
       </div>
