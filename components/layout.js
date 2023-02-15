@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from './header';
 import Footer from './footer';
+import President from '../pages/president';
 
 export default function Layout({ children, title = '', description = '' }) {
   return (
@@ -9,7 +10,6 @@ export default function Layout({ children, title = '', description = '' }) {
         <title>{`PorcinosFC - ${title}`}</title>
         <meta name="description" content={description} />
       </Head>
-
       <Header />
       {children}
     </>

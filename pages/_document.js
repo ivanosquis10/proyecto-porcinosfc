@@ -4,9 +4,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <link rel="icon" type="image/svg+xml" href="/porcinos.svg" />
         <meta
           name="description"
-          content="Porcinos FC, equipo de futbol twitch Kingsleague, informacion general"
+          content="Porcinos FC dueño Ibai Llanos, equipo de futbol twitch Kingsleague"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -19,7 +20,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-pink-500 container mx-auto">
+      <body className="linear">
         <NextScript />
         <Main />
       </body>
